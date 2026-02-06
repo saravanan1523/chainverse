@@ -6,7 +6,8 @@
     "dev": "tsx server.ts",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@fluentui/react-components": "^9.54.0",
