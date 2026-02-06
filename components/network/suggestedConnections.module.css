@@ -1,0 +1,72 @@
+.card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 0 16px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: 600;
+    color: #fff;
+    font-size: 14px;
+}
+
+.context {
+    font-size: 12px;
+    color: #8b949e;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.connectBtn {
+    background: transparent;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 4px 12px;
+    color: #c9d1d9;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+    transition: all 0.2s;
+}
+
+.connectBtn:hover {
+    background: rgba(240, 246, 252, 0.1);
+    color: #fff;
+    border-color: #8b949e;
+}
+
+.connectBtn svg {
+    width: 16px;
+    height: 16px;
+}

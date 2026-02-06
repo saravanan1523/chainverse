@@ -1,0 +1,78 @@
+.dashboardCard {
+    background: var(--colorNeutralBackground1);
+    border: 1px solid var(--colorNeutralStroke2);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 8px;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: var(--colorNeutralForeground1);
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    color: var(--colorNeutralForeground3);
+    margin: 0 0 16px 0;
+}
+
+.metrics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.metric {
+    padding: 12px 0;
+    border-top: 1px solid var(--colorNeutralStroke3);
+}
+
+.metricHeader {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.metricIcon {
+    width: 24px;
+    height: 24px;
+    color: var(--colorNeutralForeground3);
+    flex-shrink: 0;
+}
+
+.metricValue {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--colorNeutralForeground1);
+    margin: 0 0 2px 0;
+}
+
+.metricLabel {
+    font-size: 0.75rem;
+    color: var(--colorNeutralForeground3);
+    margin: 0;
+}
+
+.metricFooter {
+    font-size: 0.75rem;
+    color: var(--colorNeutralForeground3);
+    margin: 0;
+}
+
+.metric:hover {
+    cursor: pointer;
+}
+
+.metric:hover .metricValue {
+    color: var(--colorBrandForeground1);
+}
+
+@media (max-width: 768px) {
+    .metrics {
+        grid-template-columns: 1fr;
+    }
+}

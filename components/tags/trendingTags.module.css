@@ -1,0 +1,47 @@
+.container {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.icon {
+    color: var(--color-primary);
+}
+
+.title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.tagsList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tagItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rank {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-text-tertiary);
+    min-width: 20px;
+}
+
+.loading {
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    padding: 20px 0;
+    margin: 0;
+}

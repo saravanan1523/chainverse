@@ -1,0 +1,39 @@
+.card {
+    background: var(--colorNeutralBackground1);
+    border: 1px solid var(--colorNeutralStroke2);
+    border-radius: 8px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--colorNeutralForeground2);
+    text-decoration: none;
+    transition: background 0.15s ease;
+}
+
+.link:hover {
+    background: var(--colorNeutralBackground3);
+    color: var(--colorNeutralForeground1);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    color: var(--colorNeutralForeground3);
+}
+
+.link:hover .icon {
+    color: var(--colorBrandForeground1);
+}

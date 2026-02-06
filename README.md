@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### ChainVerse Setup Instructions
 
-## Getting Started
+Thank you for choosing ChainVerse! Follow these steps to get your platform running:
 
-First, run the development server:
+## Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js 18+ and npm
+- PostgreSQL database (local or cloud)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation & Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Install Dependencies** (already done)
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Set Up Database**
+   
+   Update `.env.local` with your PostgreSQL connection string:
+   ```
+   DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE"
+   ```
 
-## Learn More
+3. **Initialize Database**
+   ```bash
+   npx prisma db push
+   ```
+   This will create all tables in your database.
 
-To learn more about Next.js, take a look at the following resources:
+4. **Add OpenAI API Key** (for AI Assistant)
+   
+   Add to `.env.local`:
+   ```
+   OPENAI_API_KEY="your-openai-api-key-here"
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Run Development Server**
+   ```bash
+   npm run dev
+   ```
+   
+   Visit [http://localhost:3000](http://localhost:3000)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## First Steps
 
-## Deploy on Vercel
+1. **Create an Account**
+   - Navigate to `/register`
+   - Choose your role (Individual, Company Admin, or Employee)
+   - Fill in your profile details
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Explore the Platform**
+   - **Ops Feed**: Case studies, SOPs, insights, and incidents
+   - **People Feed**: Celebrations and career updates
+   - **Company Feed**: Company announcements and updates
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Create Your First Post**
+   - Click "Create Post" button
+   - Select post type
+   - Share your knowledge!
+
+## Database Schema
+
+The platform includes:
+- **Users** with role-based access (Individual, Company Admin, Employee, Platform Admin)
+- **Companies** with verified badges
+- **Posts** with 6 types (Celebration, Insight, Case Study, SOP, Incident, Company Update)
+- **Comments** and **Reactions** (Like & Save)
+- **AI Queries** tracking
+- **Subscriptions** for premium features
+
+## Features Implemented
+
+✅ Email/Password Authentication
+✅ Role-Based User System
+✅ Three-Feed System (Ops, People, Company)
+✅ Post Creation with Templates
+✅ Comments & Reactions
+✅ AI Assistant (ChainAI)
+✅ Company Profiles
+✅ User Profiles
+✅ Microsoft Fluent UI Design
+
+## What's Next?
+
+- Set up your company profile (if you're a Company Admin)
+- Invite team members
+- Start sharing operational knowledge
+- Use the AI Assistant for supply chain insights
+
+## Support
+
+For issues or questions, refer to the API documentation in `/app/api/`.
+
+---
+
+**Built with:**
+- Next.js 16
+- TypeScript
+- Prisma + PostgreSQL
+- Microsoft Fluent UI
+- NextAuth.js
+- OpenAI API

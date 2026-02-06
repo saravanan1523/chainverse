@@ -1,0 +1,58 @@
+.section {
+    background: var(--colorNeutralBackground1);
+    border: 1px solid var(--colorNeutralStroke2);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 8px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--colorNeutralForeground1);
+}
+
+.headerActions {
+    display: flex;
+    gap: 8px;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+}
+
+.language {
+    padding: 12px 0;
+}
+
+.language:first-child {
+    padding-top: 0;
+}
+
+.divider {
+    height: 1px;
+    background: var(--colorNeutralStroke3);
+    margin: 12px 0;
+}
+
+.languageName {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: var(--colorNeutralForeground1);
+}
+
+.proficiency {
+    font-size: 0.75rem;
+    color: var(--colorNeutralForeground3);
+    margin: 0;
+}

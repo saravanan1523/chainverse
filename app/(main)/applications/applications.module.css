@@ -1,0 +1,173 @@
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.header {
+    margin-bottom: 32px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: var(--font-size-md);
+    color: var(--color-text-secondary);
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: var(--color-text-tertiary);
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.appCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: var(--space-lg);
+    gap: 24px;
+}
+
+.appContent {
+    flex: 1;
+}
+
+.jobInfo {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.companyLogo {
+    width: 48px;
+    height: 48px;
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.jobTitle {
+    margin: 0 0 4px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.companyName {
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.metaItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--color-text-tertiary);
+}
+
+.metaItem svg {
+    font-size: 16px;
+}
+
+.resumeLink {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.resumeLink:hover {
+    text-decoration: underline;
+}
+
+.statusSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    min-width: 200px;
+}
+
+.statusBadgeWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.statusLabel {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--color-text-tertiary);
+    letter-spacing: 0.5px;
+}
+
+.notes {
+    background-color: var(--color-bg-secondary);
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 3px solid var(--color-primary);
+    width: 100%;
+}
+
+.notesLabel {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--color-text-secondary);
+}
+
+.notesText {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--color-text-primary);
+}
+
+.empty {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: var(--color-bg-primary);
+    border: 1px dashed var(--color-border);
+    border-radius: 12px;
+}
+
+.emptyIcon {
+    font-size: 48px;
+    color: var(--color-text-tertiary);
+    margin-bottom: 16px;
+}
+
+.browseButton {
+    display: inline-block;
+    margin-top: 24px;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}

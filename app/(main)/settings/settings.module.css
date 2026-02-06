@@ -1,0 +1,125 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 32px;
+}
+
+.sidebarTitle {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 0 24px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    color: #8b949e;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.navItem:hover {
+    background: rgba(240, 246, 252, 0.1);
+    color: #fff;
+}
+
+.active {
+    background: #21262d !important;
+    color: #1f6feb !important;
+    font-weight: 600;
+}
+
+.content {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+.section h2 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+.description {
+    color: #8b949e;
+    margin: 0 0 24px;
+    font-size: 14px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 24px;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.formGroup label {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 10px 12px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: #1f6feb;
+}
+
+.checkboxGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.checkboxGroup label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #c9d1d9;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.checkboxGroup input {
+    width: 16px;
+    height: 16px;
+}
+
+.actions {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid #30363d;
+    display: flex;
+    justify-content: flex-end;
+}

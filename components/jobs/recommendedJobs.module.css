@@ -1,0 +1,110 @@
+.container {
+    margin-bottom: 32px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    color: var(--color-primary);
+    font-size: 24px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    flex: 1;
+}
+
+.badge {
+    background: var(--color-primary-faint);
+    color: var(--color-primary);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.jobsList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.jobItem {
+    position: relative;
+}
+
+.matchInfo {
+    margin-top: 12px;
+    padding: 12px;
+    background: var(--color-bg-secondary);
+    border-radius: 8px;
+    border-left: 3px solid var(--color-primary);
+}
+
+.matchScore {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.scoreLabel {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+}
+
+.scoreValue {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.skills {
+    margin-top: 8px;
+}
+
+.skillLabel {
+    font-size: 0.8rem;
+    color: var(--color-text-tertiary);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.skillTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.skillTag {
+    background: var(--color-success-faint);
+    color: var(--color-success);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.missingSkill {
+    background: var(--color-warning-faint);
+    color: var(--color-warning);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.loading,
+.empty {
+    padding: 20px;
+    text-align: center;
+    color: var(--color-text-secondary);
+    font-style: italic;
+}

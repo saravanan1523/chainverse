@@ -1,0 +1,17 @@
+.button {
+    transition: all var(--transition-normal);
+    min-width: 100px;
+}
+
+.following {
+    background-color: transparent;
+    color: var(--color-text-secondary);
+    border-color: var(--color-border);
+}
+
+.following:hover {
+    background-color: var(--color-error-bg);
+    color: var(--color-error);
+    border-color: var(--color-error);
+    /* content: 'Unfollow'; // hard to do content swap in pure css with icon, logic handled in js */
+}

@@ -1,0 +1,21 @@
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-bg-primary);
+}
+
+.main {
+    flex: 1;
+    /* Header height (roughly 60-72px depending on global CSS) + spacing */
+    /* AppLayout.module.css uses top: 0 sticky, so we don't need padding-top for flow if we use sticky there, 
+       but here we might want flow. Header component uses fixed/sticky? 
+       AppLayout.module.css defined .header as sticky. 
+       If our Header component uses .header class from AppLayout.module.css, it acts same.
+       Let's ensure we account for it. sticky doesn't overlap content unless content scrolls under.
+       But standard main usually has some top padding or gap.
+    */
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    width: 100%;
+}

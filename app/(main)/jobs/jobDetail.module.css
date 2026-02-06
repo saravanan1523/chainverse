@@ -1,0 +1,120 @@
+.container {
+    max-width: 1128px;
+    margin: 24px auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 24px;
+}
+
+.mainContent {
+    background-color: var(--color-bg-primary);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+}
+
+.header {
+    padding: 24px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-text-primary);
+    margin-bottom: 8px;
+}
+
+.meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text-secondary);
+    margin-bottom: 24px;
+}
+
+.postedDate {
+    color: var(--color-text-success);
+}
+
+.actionButtons {
+    display: flex;
+    gap: 12px;
+}
+
+.content {
+    padding: 32px 24px;
+}
+
+.sectionTitle {
+    font-size: 20px;
+    color: var(--color-text-primary);
+    margin-bottom: 16px;
+}
+
+.sectionTitle:not(:first-child) {
+    margin-top: 32px;
+}
+
+.description {
+    color: var(--color-text-primary);
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skillTag {
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-text-primary);
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+    border: 1px solid var(--color-border);
+}
+
+.sidebarCard {
+    background-color: var(--color-bg-primary);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--color-border);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.sidebarTitle {
+    font-size: 16px;
+    color: var(--color-text-primary);
+    margin-bottom: 16px;
+}
+
+.quickDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.detailRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-text-secondary);
+}
+
+.detailLabel {
+    font-size: 12px;
+}
+
+.detailValue {
+    color: var(--color-text-primary);
+}
+
+.loading {
+    padding: 80px;
+    text-align: center;
+    color: var(--color-text-secondary);
+}

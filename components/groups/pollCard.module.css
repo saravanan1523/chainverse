@@ -1,0 +1,97 @@
+.pollCard {
+    padding: var(--space-lg);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    margin-bottom: var(--space-md);
+}
+
+.header {
+    margin-bottom: var(--space-lg);
+}
+
+.question {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--space-xs);
+}
+
+.description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.optionWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xxs);
+}
+
+.optionButton {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--space-md);
+    background: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    text-align: left;
+    transition: all var(--transition-normal);
+    color: var(--color-text-primary);
+}
+
+.optionButton:hover:not(.disabled) {
+    background: var(--color-bg-hover);
+    border-color: var(--color-primary);
+}
+
+.voted {
+    background: rgba(var(--color-primary-rgb), 0.05);
+    border-color: var(--color-primary);
+}
+
+.disabled {
+    cursor: default;
+}
+
+.optionIcon {
+    margin-right: var(--space-md);
+    display: flex;
+    align-items: center;
+}
+
+.optionText {
+    flex: 1;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+.votePercentage {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-bold);
+}
+
+.progressBar {
+    height: 4px !important;
+    border-radius: var(--border-radius-full);
+}
+
+.footer {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-secondary);
+}

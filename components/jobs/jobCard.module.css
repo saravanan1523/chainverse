@@ -1,0 +1,102 @@
+.card {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    padding: var(--space-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-md);
+}
+
+.content {
+    flex: 1;
+}
+
+.header {
+    display: flex;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.companyLogo {
+    width: 48px;
+    height: 48px;
+    background: var(--color-bg-tertiary);
+    color: var(--color-text-primary);
+    border-radius: var(--border-radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-base);
+}
+
+.title {
+    margin: 0 0 var(--space-xxs);
+    font-size: var(--font-size-lg);
+}
+
+.link {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.company {
+    color: var(--color-text-primary);
+    margin: 0;
+    font-size: var(--font-size-sm);
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    margin-bottom: var(--space-sm);
+}
+
+.detailItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--color-text-tertiary);
+    font-size: var(--font-size-sm);
+}
+
+.icon {
+    font-size: var(--font-size-base);
+}
+
+.salary {
+    color: var(--color-success);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-sm);
+    margin: var(--space-xs) 0 0;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+}
+
+.mainActions {
+    display: flex;
+    gap: 8px;
+}
+
+.aiButton {
+    color: var(--color-primary) !important;
+    border: 1px dashed var(--color-primary) !important;
+    background-color: var(--color-bg-brand-subtle) !important;
+}
+
+.aiButton:hover {
+    background-color: var(--color-bg-brand-subtle) !important;
+    border-style: solid !important;
+}

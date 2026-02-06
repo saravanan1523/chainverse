@@ -1,0 +1,143 @@
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: var(--color-bg-primary);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow-sm);
+}
+
+.headerContent {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 var(--space-xl);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftZone {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    min-width: 240px;
+    /* Aligns with sidebar width */
+}
+
+.centerZone {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    /* Or center if preferred, but usually search is near-left */
+    max-width: 420px;
+    margin-left: var(--space-xl);
+}
+
+.rightZone {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--space-sm);
+    min-width: 320px;
+    /* Aligns with right sidebar */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    line-height: 1;
+    min-width: max-content;
+}
+
+.logo h1 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.logo span {
+    font-size: var(--font-size-2xs);
+    color: var(--color-text-tertiary);
+    margin-top: -2px;
+}
+
+.userSection {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.userName {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-sm);
+}
+
+.userRole {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 240px 1fr 320px;
+    gap: var(--space-xl);
+    max-width: 1320px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 var(--space-xl);
+}
+
+.sidebar {
+    background-color: var(--color-bg-primary);
+    border-right: 1px solid var(--color-border);
+    min-height: calc(100vh - 72px);
+    position: sticky;
+    top: 72px;
+}
+
+.rightSidebar {
+    background-color: var(--color-bg-primary);
+    border-left: 1px solid var(--color-border);
+    min-height: calc(100vh - 72px);
+    position: sticky;
+    top: 72px;
+}
+
+.main {
+    min-height: calc(100vh - 72px);
+    padding: var(--space-xl) 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+        min-height: auto;
+    }
+}

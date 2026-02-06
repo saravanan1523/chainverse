@@ -1,0 +1,61 @@
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 100%;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Profile sidebar cards - displayed inline within main content */
+.profileSidebarCards {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.sidebarCard {
+    background: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 16px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.sidebarTitle {
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0 0 8px 0;
+    color: var(--color-text-primary);
+}
+
+.sidebarText {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .profileSidebarCards {
+        flex-direction: column;
+    }
+
+    .sidebarCard {
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,208 @@
+.headerCard {
+    background: var(--colorNeutralBackground1);
+    border: 1px solid var(--colorNeutralStroke2);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.cover {
+    height: 200px;
+    background: linear-gradient(135deg, #0078d4 0%, #00bcf2 50%, #0078d4 100%);
+    position: relative;
+}
+
+.editCoverButton {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.avatarSection {
+    position: relative;
+    padding: 0 24px;
+    margin-top: -80px;
+    margin-bottom: 16px;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0078d4, #00bcf2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 600;
+    border: 4px solid var(--colorNeutralBackground1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.editAvatarButton {
+    position: absolute;
+    left: 140px;
+    top: 120px;
+    background: var(--colorNeutralBackground1);
+    border: 1px solid var(--colorNeutralStroke2);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.userInfo {
+    padding: 0 24px 16px 24px;
+}
+
+.nameSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.userName {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--colorNeutralForeground1);
+}
+
+.userTitle {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--colorNeutralForeground2);
+    margin: 0 0 8px 0;
+}
+
+.metaInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.metaItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.875rem;
+    color: var(--colorNeutralForeground3);
+}
+
+.metaIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.connections {
+    font-size: 0.875rem;
+    color: var(--colorBrandForeground1);
+    margin: 8px 0 0 0;
+    font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    padding: 16px 24px;
+    border-top: 1px solid var(--colorNeutralStroke3);
+}
+
+.actions button {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .cover {
+        height: 120px;
+    }
+
+    .avatarSection {
+        margin-top: -60px;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+        font-size: 3rem;
+    }
+
+    .editAvatarButton {
+        left: 100px;
+        top: 90px;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+}
+
+/* More Menu Dropdown */
+.moreMenu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 4px;
+    background: var(--colorNeutralBackground1);
+    border: 1px solid var(--colorNeutralStroke2);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    min-width: 200px;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: var(--colorNeutralForeground1);
+    text-align: left;
+    transition: background-color 0.15s;
+}
+
+.menuItem:hover {
+    background: var(--colorNeutralBackground1Hover);
+}
+
+.menuItem svg {
+    width: 20px;
+    height: 20px;
+    color: var(--colorNeutralForeground3);
+}
+
+/* Section Buttons for Add Profile Section Modal */
+.sectionButton {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--colorNeutralStroke2);
+    border-radius: 8px;
+    background: var(--colorNeutralBackground1);
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--colorNeutralForeground1);
+    text-align: left;
+    transition: all 0.15s;
+}
+
+.sectionButton:hover {
+    background: var(--colorNeutralBackground1Hover);
+    border-color: var(--colorBrandStroke1);
+}
+
+.sectionButton svg {
+    width: 20px;
+    height: 20px;
+    color: var(--colorBrandForeground1);
+}

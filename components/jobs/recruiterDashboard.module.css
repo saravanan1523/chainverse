@@ -1,0 +1,172 @@
+.container {
+    max-width: 1200px;
+    margin: var(--space-2xl) auto;
+    padding: 0 var(--space-md);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-xl);
+}
+
+.title {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.select {
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--border-radius-xl);
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-primary);
+    outline: none;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+    gap: var(--space-md);
+}
+
+.candidateCard {
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.candidatePrimary {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-start;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.candidateInfo {
+    flex: 1;
+}
+
+.candidateName {
+    margin: 0 0 var(--space-xxs) 0;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+}
+
+.candidateBio {
+    margin: 0 0 var(--space-sm) 0;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-normal);
+}
+
+.appliedFor {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+}
+
+.jobText {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+}
+
+.candidateActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+}
+
+.actionButton {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: 1px solid var(--color-border);
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--border-radius-xl);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-primary);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all var(--transition-normal);
+}
+
+.actionButton:hover {
+    background-color: var(--color-bg-secondary);
+    border-color: var(--color-primary);
+}
+
+.decisionGroup {
+    display: flex;
+    gap: var(--space-sm);
+    margin-left: auto;
+}
+
+.decisionButton {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border: none;
+    padding: var(--space-xs) var(--space-md);
+    border-radius: var(--border-radius-xl);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: opacity var(--transition-normal);
+}
+
+.decisionButton:hover {
+    opacity: 0.9;
+}
+
+.offer {
+    background-color: var(--color-success);
+    color: white;
+}
+
+.reject {
+    background-color: var(--color-error);
+    color: white;
+}
+
+.loading,
+.empty {
+    text-align: center;
+    padding: var(--space-3xl);
+    color: var(--color-text-tertiary);
+}
+
+.emptyIcon {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--space-md);
+}

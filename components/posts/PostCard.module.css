@@ -1,0 +1,218 @@
+.postCard {
+    margin-bottom: var(--space-lg);
+    transition: all var(--transition-normal);
+}
+
+.postCard:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-md);
+}
+
+.authorInfo {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+}
+
+.metadata {
+    display: flex;
+    flex-direction: column;
+}
+
+.authorName {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.authorName:hover {
+    color: var(--color-primary);
+}
+
+.timestamp {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-tertiary);
+}
+
+.content {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: var(--space-md);
+}
+
+.title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-sm);
+    transition: color var(--transition-fast);
+}
+
+.content:hover .title {
+    color: var(--color-primary);
+}
+
+.excerpt {
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-relaxed);
+    font-size: var(--font-size-base);
+}
+
+/* Media Styles */
+.media {
+    margin-bottom: var(--space-md);
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+}
+
+.mediaImage {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.mediaVideo {
+    width: 100%;
+    max-height: 500px;
+    display: block;
+}
+
+.mediaDocument {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+    background: var(--color-surface-secondary);
+    border-radius: var(--border-radius-md);
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+    transition: background var(--transition-fast);
+}
+
+.mediaDocument:hover {
+    background: var(--color-surface-tertiary);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.tag {
+    font-size: var(--font-size-sm);
+    color: var(--color-primary);
+    background-color: var(--color-bg-tertiary);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--border-radius-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.actions {
+    display: flex;
+    gap: var(--space-md);
+    align-items: center;
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--color-border);
+}
+
+.actions button {
+    font-size: var(--font-size-sm);
+}
+
+.liked {
+    color: var(--color-error) !important;
+}
+
+.saved {
+    color: var(--color-primary) !important;
+}
+
+.views {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--color-text-tertiary);
+    font-size: var(--font-size-sm);
+}
+
+.views svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Attachments Grid */
+.attachmentsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.attachmentItem {
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    background: var(--color-surface-secondary);
+    border: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+}
+
+.attachmentImage,
+.attachmentVideo {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+.attachmentDocument {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    text-decoration: none;
+    color: var(--color-text-primary);
+    transition: background var(--transition-fast);
+}
+
+.attachmentDocument:hover {
+    background: var(--color-surface-tertiary);
+}
+
+.attachmentDocument svg {
+    font-size: 24px;
+    color: var(--color-primary);
+    flex-shrink: 0;
+}
+
+.docMeta {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.docName {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.docSize {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-tertiary);
+}

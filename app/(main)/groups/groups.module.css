@@ -1,0 +1,243 @@
+.container {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 24px;
+}
+
+/* Main Content Card */
+.mainCard {
+    background-color: var(--color-bg-primary);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+}
+
+.header {
+    padding: 12px 16px 0;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    gap: 24px;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 12px 4px;
+    color: var(--color-text-secondary);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.2s;
+}
+
+.tab:hover {
+    color: #fff;
+    background: none;
+    /* Override potential button defaults */
+}
+
+.activeTab {
+    color: #03a87c;
+    /* Brand color or generic green/blue */
+    border-bottom: 2px solid #03a87c;
+}
+
+.createButton {
+    background-color: transparent;
+    color: #03a87c;
+    border: 1px solid #03a87c;
+    border-radius: 16px;
+    padding: 6px 16px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-bottom: 12px;
+    /* Align with tabs visually */
+}
+
+.createButton:hover {
+    background-color: rgba(3, 168, 124, 0.1);
+}
+
+/* Group List */
+.groupList {
+    padding: 0;
+}
+
+.groupItem {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--color-border);
+    transition: background 0.2s;
+}
+
+.groupItem:last-child {
+    border-bottom: none;
+}
+
+.groupItem:hover {
+    background-color: var(--color-bg-hover);
+}
+
+.groupLogo {
+    width: 56px;
+    height: 56px;
+    margin-right: 12px;
+    border-radius: 4px;
+    background-color: var(--color-bg-tertiary);
+    /* Placeholder bg */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--color-text-primary);
+    flex-shrink: 0;
+}
+
+.groupInfo {
+    flex: 1;
+}
+
+.groupName {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    display: block;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+
+.groupName:hover {
+    text-decoration: underline;
+}
+
+.memberCount {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+}
+
+.moreButton {
+    background: none;
+    border: none;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.moreButton:hover {
+    background-color: var(--color-bg-hover);
+    color: var(--color-text-primary);
+}
+
+.footerSearch {
+    padding: 16px;
+    text-align: center;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}
+
+.searchLink {
+    color: #03a87c;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.searchLink:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebarCard {
+    background-color: var(--color-bg-primary);
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    padding: 16px;
+}
+
+.sidebarTitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    margin-bottom: 16px;
+}
+
+.suggestionItem {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.suggestionLogo {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    border-radius: 4px;
+    background-color: var(--color-bg-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text-primary);
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.suggestionInfo {
+    flex: 1;
+}
+
+.suggestionName {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 2px;
+    display: block;
+}
+
+.suggestionMembers {
+    font-size: 12px;
+    color: var(--color-text-secondary);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.joinButton {
+    background: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+    border-radius: 16px;
+    padding: 4px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.joinButton:hover {
+    background-color: var(--color-bg-hover);
+    border-color: var(--color-text-primary);
+    color: var(--color-text-primary);
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebarCard {
+        margin-top: 24px;
+    }
+}

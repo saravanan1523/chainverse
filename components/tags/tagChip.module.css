@@ -1,0 +1,44 @@
+.container {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 4px 12px;
+    transition: all 0.2s ease;
+}
+
+.container:hover {
+    background: var(--color-bg-tertiary);
+    border-color: var(--color-primary);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.hash {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.count {
+    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    margin-left: 4px;
+}
+
+.followBtn {
+    margin-left: 4px;
+}
